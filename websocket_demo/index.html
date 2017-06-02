@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css" charset="utf-8"/>
+    <link rel="stylesheet" href="sweetalert2/sweetalert2.min.css" charset="UTF-8"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="header_logo">
+        <img src="img/logo.png"/>
+    </div>
+    <div class="Box">
+        <!--左边信息-->
+        <div class="leftBox">
+            <div class="personInfo">
+                <div class="imgArea">
+                    <img src="img/timg.jpg"/>
+                </div>
+            <span id="nameInfo">
+                吃撑黄璐请篮子
+            </span>
+                <i class="leftHideBox">〓</i>
+            </div>
+            <input type="search" placeholder="查找用户"/>
+            <div class="personNum">
+                <ul>
+                    <li><img src="img/other.jpg" alt=""/>小红</li>
+                    <li><img src="img/other.jpg" alt=""/>小白</li>
+                    <li><img src="img/other.jpg" alt=""/>小黑</li>
+                    <li><img src="img/other.jpg" alt=""/>小黄</li>
+                    <li><img src="img/other.jpg" alt=""/>小绿</li>
+                    <li><img src="img/other.jpg" alt=""/>小红</li>
+                    <li><img src="img/other.jpg" alt=""/>小白</li>
+                    <li><img src="img/other.jpg" alt=""/>小黑</li>
+                    <li><img src="img/other.jpg" alt=""/>小黄</li>
+                    <li><img src="img/other.jpg" alt=""/>小绿</li>
+                    <li><img src="img/other.jpg" alt=""/>小黑</li>
+                    <li><img src="img/other.jpg" alt=""/>小黄</li>
+                    <li><img src="img/other.jpg" alt=""/>小绿</li>
+                </ul>
+            </div>
+        </div>
+        <!--右聊天框-->
+        <div class="rightBox">
+            <!--关闭区域-->
+            <div class="topArea">
+                <i class="HideBox">〓</i>
+                <span>聊天窗口</span>
+            </div>
+            <div class="rolling">
+                <div class="checkArea">
+                    <label><input type="checkbox" value="" id="handle2"/>手动滚屏</label>
+                </div>
+                <img src="img/up.png" class="upIcon"/>
+                <img src="img/down.png" class="downIcon"/>
+            </div>
+            <!--聊天区域-->
+            <div class="talkArea" id="talkArea">
+                <!--收到的的消息-->
+                <!--<p id="perLeft">
+                    &lt;!&ndash;<img src="img/timg.jpg"/>
+                    <span>
+                        <i>2017-17-31 22:05:59</i>
+                        <em>呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵</em>
+                    </span>&ndash;&gt;
+                </p>-->
+
+                <!--发出的消息-->
+               <!-- <p id="perRight">
+                    &lt;!&ndash;<img src="img/timg.jpg"/>
+                    <span>
+                        <i>2017-17-31 22:05:59</i>
+                        呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵
+                    </span>&ndash;&gt;
+                </p>-->
+            </div>
+            <!--输入文字区域-->
+            <div class="collectArea">
+                <textarea  id="ipt" cols="30" rows="10" placeholder="请输入文字，点击发送消息"></textarea>
+                <button id="btn">发送消息</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.2.2.4.js" charset="utf-8"></script>
+<script src="sweetalert2/sweetalert2.min.js" charset="UTF-8"></script>
+<script src="js/jquery.cookie.js" charset="UTF-8"></script>
+<script src="js/index.js" charset="UTF-8"></script>
+<script src="js/ua.js"></script>
+</body>
+</html>

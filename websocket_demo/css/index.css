@@ -1,0 +1,498 @@
+/*清除默认样式*/
+body, div, p, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd {
+
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    font-family: SimHei;
+}
+
+i{
+    font-style: normal;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+em{
+    font-style: normal;
+}
+input, img {
+
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    outline-style: none;
+
+}
+
+body {
+    color: #333333;
+    overflow: scroll;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+}
+/*适配*/
+@media only screen and (width: 320px) {
+    html {
+        font-size: 16px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (width: 360px) {
+    html {
+        font-size: 18px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (width: 375px) {
+    html {
+        font-size: 18.75px;
+    }
+}
+
+@media only screen and (width: 400px) {
+    html {
+        font-size: 20px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (width: 412px) {
+    html {
+        font-size: 20.6px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (width: 414px) {
+    html {
+        font-size: 20.7px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 32px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px;
+    }
+    .Box{
+        width: 90%;
+        margin: auto 5% 1rem;
+    }
+}
+/*适配1080*/
+@media only screen and (min-width: 1080px) {
+    html {
+        font-size: 54px;
+    }
+    .Box{
+        width: 1024px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+
+/*页面样式*/
+.header_logo{
+    width: 100%;
+    height: 3rem;
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding-top: .6rem;
+}
+
+.header_logo img{
+    width: 8rem;
+    height: 2.2rem;
+}
+
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.Box{
+    position: absolute;
+    display: block;
+    /*width: 90%;*/
+    /*margin: auto 5% 1rem;*/
+    border-radius: .3rem;
+    top: 3.5rem;
+    border: 1px solid #ced1d8;
+}
+
+.leftBox{
+    display: none;
+    width: 100%;
+    float: left;
+    background: #2e3138;
+    color: #ced1d8;
+    height: 100%;
+    border-radius: .3rem;
+}
+
+.personInfo{
+    height: 5rem;
+    padding: 10px;
+}
+
+.imgArea{
+    width: 20%;
+    height: 65%;
+    border-radius: 50%;
+    float: left;
+    margin: .6rem;
+}
+
+.imgArea img{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+#nameInfo{
+    display: block;
+    width: 60%;
+    float: left;
+    margin-top: 1.8rem;
+    font-size: 1rem;
+}
+
+.leftBox input{
+    width: 90%;
+    display: block;
+    height: 2rem;
+    margin: auto;
+    border: none;
+    background: #272a31;
+    color: #ced1d8;
+    padding-left: 5px;
+    font-size: .9rem;
+}
+
+.personNum{
+    height: 22rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.personNum ul li{
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    float: left;
+    font-size: .9rem;
+}
+.personNum ul li:hover{
+    background-color: #43464d;
+}
+.personNum ul li img{
+    width: 15%;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin: .7rem 1rem;
+    float: left;
+}
+.personNum ul li i{
+    font-size: 12px;
+    text-align: right;
+}
+
+.rightBox{
+    float: left;
+    width: 100%;
+}
+.topArea{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    padding: .3rem.5rem;
+}
+.topArea span{
+    width: 80%;
+    text-align: center;
+    display: block;
+    float: left;
+    font-size: .9rem;
+}
+.HideBox{
+    cursor: pointer;
+    width: 10%;
+    float: left;
+    font-size: 1rem;
+}
+.talkArea{
+    height: 23rem;
+    border-bottom: 1px solid #ced1d8;
+    padding: .5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    word-wrap:break-word;
+    -webkit-overflow-scrolling: touch;
+}
+
+#ipt{
+    width: 96%;
+    padding-top: .5rem;
+    /*line-height: 1rem;
+    height: 4rem;*/
+    line-height: 2rem;
+    height: 2rem;
+    border: none;
+    resize:none;
+    display: block;
+    margin: auto;
+    font-size: .8rem;
+}
+.collectArea{
+    height: 3.2rem;
+    position: relative;
+}
+#btn{
+    width: 6rem;
+    height: 2.3rem;
+    border: 1px solid #ced1d8;
+    background: #ced1d8;
+    float: right;
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+/*设置了聊天窗口的滚轴及用户列表*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.personNum::-webkit-scrollbar
+{
+    width: 5px;
+    height: 12px;
+    background-color: #ced1d8;
+}
+
+.leftHideBox{
+    float: right;
+    width: 1rem;
+    font-size: 1rem;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.personNum::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #555;
+}
+
+/*定义滑块 内阴影+圆角*/
+.personNum::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #c0c0c0;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+.talkArea::-webkit-scrollbar
+{
+    width: 5px;
+    height: 12px;
+    background-color: #ffffff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.talkArea::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/*定义滑块 内阴影+圆角*/
+.talkArea::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #c0c0c0;
+}
+
+
+#perLeft,#perRight{
+    float: left;
+    border-radius: .3rem;
+    width: 96%;
+    margin: .2rem 2%;
+}
+#perLeft i,#perRight i{
+    font-size: .6rem;
+    width: 100%;
+    text-align: center;
+    float: left;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    color: #999999;
+}
+#perLeft img,#perRight img{
+    float: left;
+    width: 13%;
+    height: 2rem;
+    margin-top: .8rem;
+}
+#perRight img{
+    float: right;
+}
+
+#perLeft span,#perRight span{
+    width: 80%;
+    min-width: 50%;
+    line-height: 1.5rem;
+    padding: 0 2%;
+    background: #A6DADC;
+    float: left;
+    margin: .3rem 0 .3rem 3%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    font-size: .8rem;
+}
+
+#perRight span{
+    float: right;
+    margin: .3rem 3% .3rem 0;
+}
+
+/*气泡三角形伪元素*/
+#perLeft span:before{
+    position:absolute;
+    content:"\00a0";
+    width:0;
+    height:0;
+    border-width:.3rem .5rem .3rem 0;
+    border-style:solid;
+    border-color:transparent #A6DADC transparent transparent;
+    top:1.8rem;
+    left:-.35rem;
+}
+#perRight span:before{
+    position:absolute;
+    content:"\00a0";
+    display:inline-block;
+    width:0;
+    height:0;
+    border-width: .3rem .2rem .3rem .5rem;
+    border-style:solid;
+    border-color:transparent transparent transparent #A6DADC;
+    right:-.5rem;
+    top: 1.8rem;
+
+}
+/*上下箭头*/
+.rolling{
+    width: 100%;
+    height: .8rem;
+    position: relative;
+    border-top: 1px solid #ced1d8;
+}
+.upIcon,.downIcon{
+    display: block;
+    position: absolute;
+    width: 6%;
+    margin: 0 47%;
+}
+.upIcon{
+    display: none;
+}
+.checkArea{
+    display: none;
+    float: left;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .9rem;
+    /*border-top: 1px solid #ced1d8;*/
+}
+.checkArea input{
+    position: relative;
+    top: .2rem;
+    height: 1rem;
+    width: 1rem;
+}
+.col-md-5 select{
+    width: 220px;
+    float: left;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.col-md-5 input{
+    margin-bottom: 1rem;
+    width: 94.3%;
+    height: 2rem;
+    line-height: 2rem;
+    padding-left: 5%;
+    float: left;
+    border: 1px solid #a9a9a9;
+    font-size: .9rem;
+}
+
+.seatFirst{
+    margin-right: 15px;
+}
